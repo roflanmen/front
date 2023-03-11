@@ -4,9 +4,10 @@ $primary-color-light: #a456cc;
 $background-color: #0d0c15;
 $background-color-light: #1b1729;
 $input-border-color: #ffffff;
-$font-color: white;
+$font-color: rgb(234, 234, 234);
 $transparent: rgba(#000000,0);
 $input-border-radius: 5px;
+$input-background-color: #1b1729;
 $form-margin: 20px;
 $form-padding: 5px;
 $form-border: 1px solid $input-border-color;
@@ -27,6 +28,10 @@ html, body {
 
   button {
     background-color: $transparent;
+  }
+  input, textarea, select {
+    background-color: $input-background-color;
+    color: $font-color;
   }
 }
 // Mixins
@@ -63,7 +68,8 @@ html, body {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
+  padding-left: 30px;
   background-color: $background-color;
   font-family: $font-family;
 
@@ -76,8 +82,14 @@ html, body {
   
   .logo {
     height: 50px;
+    margin-right: 20px;
   }
 
+  .logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .search-form {
     display: flex;
     align-items: center;

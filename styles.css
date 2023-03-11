@@ -2,14 +2,18 @@ html, body {
   margin: 0;
   min-height: 100vh;
   background-color: #1b1729;
-  color: white;
+  color: rgb(234, 234, 234);
   font-family: "Roboto", sans-serif;
 }
 html a, html a:visited, html button, body a, body a:visited, body button {
-  color: white;
+  color: rgb(234, 234, 234);
 }
 html button, body button {
   background-color: rgba(0, 0, 0, 0);
+}
+html input, html textarea, html select, body input, body textarea, body select {
+  background-color: #1b1729;
+  color: rgb(234, 234, 234);
 }
 
 .main-header {
@@ -17,7 +21,8 @@ html button, body button {
   justify-content: space-between;
   flex-direction: row;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
+  padding-left: 30px;
   background-color: #0d0c15;
   font-family: "Roboto", sans-serif;
 }
@@ -31,6 +36,12 @@ html button, body button {
 }
 .main-header .logo {
   height: 50px;
+  margin-right: 20px;
+}
+.main-header .logo-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .main-header .search-form {
   display: flex;
@@ -114,7 +125,7 @@ html button, body button {
 }
 
 main {
-  color: white;
+  color: rgb(234, 234, 234);
   display: flex;
   justify-content: center;
   align-items: center;
